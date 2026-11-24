@@ -287,11 +287,3 @@ Each interaction cell contains a serialized list of article/post IDs. An empty l
 | `agreement_8` | IDs of articles assigned agreement response 8 (serialized list). |
 | `agreement_9` | IDs of articles assigned agreement response 9 (serialized list). |
 | `agreement_10` | IDs of articles assigned agreement response 10 (serialized list). |
-
-
-## Reading the data
-
-- CSV files use UTF-8 text. Empty cells represent unavailable or unrecorded values; they should not automatically be treated as zero.
-- Some cells contain serialized lists of IDs or multiple selections. Parse these as lists before counting article-level responses.
-- The participant-level files contain direct and indirect identifiers. Use only the fields needed for an analysis and follow the study’s consent, ethics, and data-sharing conditions.
-- Consult the study’s questionnaire and analysis scripts for response scales, item wording, derived variables, exclusions, and analysis-specific transformations. The CSV headers alone do not define those choices.
